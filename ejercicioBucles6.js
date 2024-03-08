@@ -7,8 +7,8 @@
 666666
 …….*/
 
-
 let renglon=''
+let piramide= ''
 let boton = confirm('¡Haz click en ´Aceptar´ y verás una pirámide de números!\nSi quieres salir, haz click en ´Cancelar´')
 if(boton===true){
     for(let fila = 1; fila <= 30; fila++) {
@@ -17,6 +17,8 @@ if(boton===true){
             renglon += fila.toString();
         }
         console.log(renglon);
+        piramide += renglon + '\n'
     }
+    alert(piramide)
 }
 
