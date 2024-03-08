@@ -8,7 +8,6 @@
 666666
 …….*/
 
-let renglon=''
 let piramide= ''
 let boton = confirm('¡Haz click en ´Aceptar´ y verás una pirámide de números!\nSi quieres salir, haz click en ´Cancelar´')
 if(boton===true){
