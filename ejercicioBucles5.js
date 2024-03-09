@@ -1,4 +1,4 @@
-//Ejercicios de Bucles/Loops
+//Ejercicios de Bucles/Loops 
 /*5- Realizar una página con un script que calcule el valor de la letra de un número de DNI
 (Documento nacional de identidad).
 El algoritmo para calcular la letra del dni es el siguiente :

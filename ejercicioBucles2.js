@@ -1,4 +1,4 @@
-//Ejercicios de Bucles/Loops
+//Ejercicios de Bucles/Loops 
 /*2- Escribir un programa que solicite una nota (número) de 0 a 10. Luego mostrar la
 calificación en un alert según los siguientes rangos de nota:
 
