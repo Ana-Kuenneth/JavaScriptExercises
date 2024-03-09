@@ -90,7 +90,7 @@ el usuario (no mayor de 50)
 7
 8 (Múltiplo de 4)
 9 (Múltiplo de 9)
-10
+10-
 
 
 10- Realiza un script que pida número de filas y columnas y escriba una tabla. Dentro cada
