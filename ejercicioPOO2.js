@@ -19,7 +19,11 @@ class Cuenta {
     }
 
     extraer(cantidad){
-        this.saldo -= cantidad
+        if(this.saldo>=cantidad){
+            this.saldo -= cantidad
+        }else{
+            console.log('Fondos insuficientes');
+        }
     }
 
     informar(){
@@ -36,3 +40,37 @@ cuenta.ingresar(20)
 cuenta.informar()
 cuenta.extraer(2)
 cuenta.informar()
+
+
+//Alternativa
+// class Cuenta{
+//     constructor(titular){
+//         this.titular=titular
+//         this.saldo=0;
+//     }
+
+//     ingresar(monto){
+//         this.saldo+=monto;
+//         document.write(`<p>Ingreso $${monto}</p>`);
+//     }
+
+//     extraer(monto){
+//         if(this.saldo >= monto){
+//             this.saldo-=monto;
+//             document.write(`<p>Extraccion de $${this.saldo}</p>`);
+//         }else{
+//             document.write('<br>Fondos insuficientes');
+//         }
+//     }
+
+//     informar(){
+//         document.write(`<p>La cuenta de ${this.titular}, posee un saldo de $${this.saldo}</p>`);
+//     }
+// }
+
+// let cuenta=new Cuenta('Alex');
+// cuenta.informar();
+// cuenta.ingresar(10000);
+// cuenta.informar();
+// cuenta.extraer(5000);
+// cuenta.informar();

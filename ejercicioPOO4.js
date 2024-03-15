@@ -4,3 +4,79 @@
 Posteriormente, cree tres instancias de este objeto y guárdalas en un array.
 Por último, utilice el método imprime datos para mostrar por pantalla los valores de los tres objetos instanciados.*/
 
+class Producto{
+    constructor(codigo, nombre, precio){
+        this.codigo = codigo
+        this.nombre = nombre
+        this.precio = precio
+    }
+
+    verProducto(){
+        console.log('Producto: '+this.codigo+'\nDescripción: '+this.nombre+'\nPrecio: $'+this.precio)
+    }
+}
+
+let producto1 = new Producto(1, 'Leche', 1000)
+let producto2 = new Producto(2, 'Gaseosa', 1500)
+let producto3 = new Producto(3, 'Manzana', 900)
+
+let productos = [producto1, producto2, producto3]
+
+productos.forEach(prod => {
+    prod.verProducto()
+});
+
+
+//Alternativa
+// class Producto {
+//     constructor(codigo, nombre, precio) {
+//       this.codigo = codigo;
+//       this.nombre = nombre;
+//       this.precio = precio;
+//     }
+  
+//     get mostrarCodigo() {
+//       return this.codigo;
+//     }
+  
+//     get mostrarNombre() {
+//       return this.nombre;
+//     }
+  
+//     get mostrarPrecio() {
+//       return this.precio;
+//     }
+  
+//     set modificarCodigo(nuevoCodigo){
+//         this.codigo=nuevoCodigo;
+//     }
+//     set modificarNombre(nuevoNombre){
+//         this.nombre=nuevoNombre;
+//     }
+  
+//     set cambiarPrecio(nuevoPrecio) {
+//       this.precio = nuevoPrecio;
+//     }
+  
+//     mostrarDetalle() {
+//       return document.write(`<ul>
+//               <li>Codigo: ${this.codigo}</li>
+//               <li>Producto: ${this.nombre}</li>
+//               <li>Precio: $${this.precio}</li>
+//           </ul>`);
+//     }
+//   }
+  
+//   let Productos = [];
+  
+//   let leche = new Producto("LS245", "Leche de almendras silk", 400);
+//   let chocolate = new Producto("AB213", "Block 300gr", 350);
+//   let galleta = new Producto("GS223", "Granix sin sal", 160);
+  
+//   Productos.push(leche);
+//   Productos.push(chocolate);
+//   Productos.push(galleta);
+  
+//   for (let i = 0; i < Productos.length; i++) {
+//    Productos[i].mostrarDetalle();
+//   }
