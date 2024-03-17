@@ -68,4 +68,4 @@ Los métodos de la agenda serán los siguientes:
     ● eliminarContacto(Contacto c): elimina el contacto de la agenda, indica si se ha eliminado o no por pantalla
     ● agendaLlena(): indica si la agenda está llena.
     ● huecosLibres(): indica cuántos contactos más podemos ingresar.
-Crea un menú con opciones por consola para probar todas estas funcionalidades.
+Crea un menú con opciones por consola para probar todas estas funcionalidades. 
