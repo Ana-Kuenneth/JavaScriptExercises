@@ -23,7 +23,7 @@ class Contacto{
 
 class Agenda{
     constructor(){
-        this.agenda = [10]
+        this.agenda = []
     }
 
     aniadirContacto(contacto){
@@ -100,14 +100,64 @@ class Agenda{
     }
 }
 
-// switch (key) {
-//     case value:
+let agendaPrueba = new Agenda(10);
+  
+do{
+    let opcion = parseInt(prompt(
+        `Seleccione una opcion: 
+        1- agregar contacto,
+        2- consulta si existe un contacto,
+        3- listar contactos, 
+        4- buscar contacto, 
+        5- eliminar contacto
+        6- consulta si la agenda esta llena
+        7- consultar si la agenda tiene huecos libres
+        8- cambiar el tamaño de la agenda`
+    ));
+  
+    switch (opcion) {
+      case 1:
+        agendaPrueba.huecosLibres();
+  
+        let nombre = prompt("CREAR CONTACTO | Ingrese el nombre");
+        let telefono = prompt("CREAR CONTACTO | Ingrese su teléfono");
+        let contacto = new Contacto(nombre, telefono);
+  
+        agendaPrueba.agregarContacto(contacto);
+        break;
         
-//         break;
+      case 2:
+        let nombre2 = prompt("EXISTE CONTACTO | Ingrese el nombre del contacto");
+        let contacto2 = new Contacto(nombre2, 0);
+        agendaPrueba.existeContacto(contacto2);
+        break;
 
-//     default:
-//         break;
-// }
+      case 3:
+        agendaPrueba.listarContactos();
+        break;
+
+      case 4:
+        let contactoBuscado = prompt("BUSCAR CONTACTO | Ingrese el nombre del contacto que busca");
+        agendaPrueba.buscarContacto(contactoBuscado);
+        break;
+
+      case 5:
+        let contactoParaEliminar = prompt("ELIMINAR CONTACTO | Ingrese el nombre del contacto a eliminar");
+        agendaPrueba.eliminarContacto(contactoParaEliminar);
+        break;
+
+      case 6:
+        agendaPrueba.agendaLlena();
+        break;
+
+      case 7:
+        agendaPrueba.huecosLibres();
+        break;
+
+      default:
+        document.write("Ingrese una opción válida");
+    }
+  } while (confirm("¿Quiere realizar otra operación?"));
 
 //Alternativa
 // class Contacto {
