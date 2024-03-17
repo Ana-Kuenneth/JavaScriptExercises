@@ -16,7 +16,32 @@ let meses = [
     'Diciembre',
 ];
 
+console.log('Lista de meses:')
 meses.forEach((mes) => {
     console.log(mes);
 });
+
+
+var titulo = document.createElement("h1");
+titulo.textContent = "Lista de Meses";
+document.body.appendChild(titulo);
+var lista = document.createElement("ul");
+
+
+meses.forEach((mes) => {
+    var elemento = document.createElement("li");
+    elemento.textContent = mes;
+    lista.appendChild(elemento);
+});
+
+document.body.appendChild(lista);
+
+//No funciona:
+// document.write('<h1>Lista de Meses</h1>');
+// document.write('<ul>');
+// for(let i=0; i < month.length; i++){
+//     document.write(`<li>${month[i]}</li>`)
+// }
+// document.write('</ul>');
+
 
