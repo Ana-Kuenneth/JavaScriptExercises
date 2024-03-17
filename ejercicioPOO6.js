@@ -62,7 +62,7 @@ function mayorPag(){
 }
 
 
-//Alternativa
+//Alternativa 
 // class Libro {
 //     constructor(isbn, titulo, autor, cantPaginas) {
 //       this.isbn = isbn;

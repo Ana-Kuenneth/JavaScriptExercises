@@ -42,7 +42,7 @@ cuenta.extraer(2)
 cuenta.informar()
 
 
-//Alternativa
+//Alternativa 
 // class Cuenta{
 //     constructor(titular){
 //         this.titular=titular

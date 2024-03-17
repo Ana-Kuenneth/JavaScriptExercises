@@ -125,7 +125,7 @@ do{
   
         agendaPrueba.agregarContacto(contacto);
         break;
-        
+
       case 2:
         let nombre2 = prompt("EXISTE CONTACTO | Ingrese el nombre del contacto");
         let contacto2 = new Contacto(nombre2, 0);
@@ -159,7 +159,7 @@ do{
     }
   } while (confirm("¿Quiere realizar otra operación?"));
 
-//Alternativa
+//Alternativa 
 // class Contacto {
 //     constructor(nombre, telefono) {
 //       this.nombre = nombre;

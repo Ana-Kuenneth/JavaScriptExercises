@@ -46,7 +46,7 @@ rect3.perimetro()
 rect3.area()
 
 
-//Alternativa
+//Alternativa 
 // class Rectangulo{
 //     constructor(lado1, lado2){
 //         this.alto=lado1;

@@ -66,7 +66,7 @@ class Persona{
 let persona = new Persona('Ana', 22, 101010, 'M', 10, 10, 2000)
 
 
-//Alternativa
+//Alternativa 
 // class Persona {
 //     constructor(nombre, edad, sexo, peso, altura, fechaNacimiento) {
 //       this.nombre = nombre;

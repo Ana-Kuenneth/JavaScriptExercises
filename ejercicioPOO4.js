@@ -27,7 +27,7 @@ productos.forEach(prod => {
 });
 
 
-//Alternativa
+//Alternativa 
 // class Producto {
 //     constructor(codigo, nombre, precio) {
 //       this.codigo = codigo;

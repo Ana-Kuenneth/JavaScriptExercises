@@ -17,7 +17,7 @@ let auto = {
     }
 }
 
-//Alternativa
+//Alternativa 
 // let auto={
 //     color:'Rojo',
 //     marca:'Toyota',
